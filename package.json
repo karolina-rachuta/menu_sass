@@ -6,7 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:karolina-rachuta/menu_sass.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "karolina.rachuta@gmail.com",
+  "license": "Beerware",
+  "bugs": {
+    "url":"https://github.com:karolina-rachuta/menu_sass/issues"
+  },
+  "homepage": "https://github.com:karolina-rachuta/menu_sass#readme"
 }
