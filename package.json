@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "sass -w ./src/sass/main.scss ./src/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,7 +15,10 @@
   "author": "karolina.rachuta@gmail.com",
   "license": "Beerware",
   "bugs": {
-    "url":"https://github.com:karolina-rachuta/menu_sass/issues"
+    "url": "https://github.com:karolina-rachuta/menu_sass/issues"
   },
-  "homepage": "https://github.com:karolina-rachuta/menu_sass#readme"
+  "homepage": "https://github.com:karolina-rachuta/menu_sass#readme",
+  "devDependencies": {
+    "sass": "^1.76.0"
+  }
 }
