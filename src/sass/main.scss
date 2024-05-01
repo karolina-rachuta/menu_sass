@@ -1,10 +1,5 @@
-//nesting
-.ms-menu {
-    &__hamurger{}
+@import "common/normalize.scss";
 
-    &__box{}
+@import "components/menu.scss";
 
-    $__link{}
-
-    $__link--active{}
-}
+@import "utils/mixins.scss";

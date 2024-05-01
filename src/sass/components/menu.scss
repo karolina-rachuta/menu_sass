@@ -1,0 +1,25 @@
+@import '../utils/mixins';
+
+.ms-menu {
+
+    &__hamburger {
+        display: none;
+
+       @include mq(sm){
+        display: block;
+       }
+    }
+
+
+    &__box {
+        background-color: #fff;
+    }
+
+    &__link {
+        background-color: #fff;
+    }
+
+    &__link--active {
+        background-color: #fff;
+    }
+}
