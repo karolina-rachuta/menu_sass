@@ -1,22 +1,33 @@
 @use 'sass:map';
 @import "../variables";
 
+
 @mixin mq($breakpoint) {
     $bp-value: map.get($grid-breakpoints, $breakpoint);
 
+
+    // @debug $bp-value;
+
     @if $bp-value==null {
-        $bp-value: 0;
-        @error 'Breakpoint #{$breakpoint} is undefined. Check variables.scss'
+        @error 'Breakpoint #{$breakpoint} is undefined. Check variables.scss';
     }
 
-    @media only scree and (min-width: $bp-value) {
+    @media only screen and (min-width: $bp-value) {
         @content;
     }
 }
 
 
-.test {
-    @include mq(sm) {
-        color: red;
-    }
-}
+// .test {
+//     @include mq(sm) {
+//         color: red;
+//     }
+// }
+
+@mixin font-face($family, $path){
+    font-family: family;
+    src: url('#{path}.woff2') format('woff2'),
+         url('#{path}.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+};

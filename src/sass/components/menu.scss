@@ -1,22 +1,27 @@
 @import '../utils/mixins';
+@import '../utils/functions';
+
 
 .ms-menu {
 
     &__hamburger {
-        display: none;
+        display: block;
 
        @include mq(sm){
-        display: block;
+        display: none;
        }
     }
 
 
     &__box {
-        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        max-width: toRem(1200);
+        margin: auto;
     }
 
     &__link {
-        background-color: #fff;
+        font-family: 'Arial Bold Italic', sans-serif ;
     }
 
     &__link--active {

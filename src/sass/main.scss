@@ -1,5 +1,7 @@
-@import "common/normalize.scss";
+@import "common/normalize";
 
-@import "components/menu.scss";
+@import "utils/mixins";
 
-@import "utils/mixins.scss";
+@import "typography/fonts";
+
+@import "components/menu";
