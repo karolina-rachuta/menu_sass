@@ -25,9 +25,9 @@
 // }
 
 @mixin font-face($family, $path){
-    font-family: family;
-    src: url('#{path}.woff2') format('woff2'),
-         url('#{path}.woff') format('woff');
+    font-family: $family;
+    src: url('#{$path}.woff2') format('woff2'),
+         url('#{$path}.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 };
